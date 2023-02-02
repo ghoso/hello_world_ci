@@ -15,8 +15,6 @@ jobs:
       - image: cimg/node:13.8.0
     steps:
       - run: echo 'world'
-    requires:
-      - print_hello
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "welcome"
