@@ -5,8 +5,10 @@ jobs:
   print_hello:
     docker:
       - image: cimg/node:13.8.0
+    environment:
+      CIRCLE_USER_NAME: 'Go Hosohara'
     steps:
-      - run: echo 'hello'
+      - run: echo $CIRCLE_USER_NAME' hello'
   print_world:
     docker:
       - image: cimg/node:13.8.0
